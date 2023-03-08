@@ -1,0 +1,59 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+  background-color: var(--gray-800);
+}
+
+.sidebar img {
+  height: 4.5rem;
+
+  display: block;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 24px;
+}
+
+.profileName {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+.profileRole {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--gray-400);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.0625rem solid var(--gray-600);
+  padding: 24px 32px 32px 32px;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00b37e;
+  border-radius: 8px;
+  color: #00b37e;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  width: 192px;
+  height: 3.125rem;
+}

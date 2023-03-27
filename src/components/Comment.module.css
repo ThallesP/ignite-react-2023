@@ -1,0 +1,62 @@
+.comment {
+  display: flex;
+  gap: 1rem;
+}
+
+.comment img {
+  border-radius: 0.5rem;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.commentBox {
+  height: 7.5rem;
+  width: 100%;
+  background: var(--gray-700);
+  border-radius: 0.5625rem;
+}
+
+.comment header {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.authorAndTime {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorAndTime time {
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.authorAndTime strong {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  color: #e1e1e6;
+}
+
+.commentWrapper footer {
+  position: relative;
+  left: calc(3.125rem + 1rem);
+
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+
+  color: var(--gray-400);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}

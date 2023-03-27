@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import styles from "./App.module.css";
 import { Post } from "./components/Post";
 import { Sidebar } from "./components/Sidebar";
+import { Comment } from "./components/Comment";
 
 const posts = [
   {
@@ -19,9 +20,9 @@ function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          {posts.map(({ author, content }) => (
-            <Post author={author} content={content} />
-          ))}
+          <Comment />
+          <Post />
+          <Post />
         </main>
       </div>
     </div>

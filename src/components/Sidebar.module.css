@@ -9,6 +9,7 @@
   height: 4.5rem;
 
   display: block;
+  object-fit: cover;
 }
 
 .profile {
@@ -16,44 +17,63 @@
   flex-direction: column;
   align-items: center;
   padding-top: 1rem;
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 
-.profileName {
-  color: var(--white);
-  font-weight: 700;
+.profile img {
+  box-sizing: initial;
+  width: calc(3rem + 0.75rem);
+  height: calc(3rem + 0.75rem);
+  margin-top: -3rem; /* calc(0rem - 1.5rem - .375rem) */
+
+  border-radius: 0.5rem;
+
+  border: 0.25rem solid var(--gray-600);
+  outline: 0.125rem solid var(--green-500);
+}
+
+.profile strong {
+  margin-top: 1rem;
+  color: var(--gray-100);
   font-size: 1rem;
   line-height: 160%;
 }
 
-.profileRole {
-  font-weight: 400;
-  font-size: 14px;
+.profile span {
+  font-size: 0.875rem;
   line-height: 160%;
   color: var(--gray-400);
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 0.0625rem solid var(--gray-600);
-  padding: 24px 32px 32px 32px;
+  display: block;
+
+  border-top: 0.0625rem solid var(--gray-600);
+  padding: 1.5rem 2rem 2rem 2rem;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #00b37e;
-  border-radius: 8px;
+  display: block;
+  height: 3.125rem;
+  border: 0.0625rem solid #00b37e;
+  border-radius: 0.5rem;
   color: #00b37e;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.1875rem;
   text-decoration: none;
-  width: 192px;
-  height: 3.125rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.footer a:hover {
+  background: var(--green-500);
+  color: var(--white);
 }

@@ -12,30 +12,37 @@ export function Comment() {
         />
 
         <div className={styles.commentBox}>
-          <div className={styles.commentContent}>
-            <header>
-              <div className={styles.authorAndTime}>
-                <strong>Devon Lane</strong>
-                <time
-                  title="23-03-2023 01:00:30"
-                  dateTime="23-03-2023 01:00:30"
-                >
-                  Cerca de 2h
-                </time>
-              </div>
+          <header>
+            <div className={styles.authorAndTime}>
+              <strong>Devon Lane</strong>
+              <time title="23-03-2023 01:00:30" dateTime="23-03-2023 01:00:30">
+                Cerca de 2h
+              </time>
+            </div>
 
-              <button>
-                <Trash />
-              </button>
-            </header>
+            <button className={styles.trashButton}>
+              <Trash size={24} color="#8D8D99" />
+            </button>
+          </header>
 
-            <p>Muito bom Devon, parabéns!! 👏👏</p>
-          </div>
+          <p className={styles.commentText}>Muito bom Devon, parabéns!! 👏👏</p>
         </div>
       </div>
 
       <footer>
-        <ThumbsUp size={20} /> Aplaudir • 03
+        <button
+          style={{
+            background: "transparent",
+            border: 0,
+            color: "#8D8D99",
+            display: "flex",
+            gap: "10px",
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
+        >
+          <ThumbsUp size={20} weight="bold" /> Aplaudir • 03
+        </button>
       </footer>
     </div>
   );

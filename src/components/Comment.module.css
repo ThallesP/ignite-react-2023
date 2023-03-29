@@ -14,6 +14,12 @@
   width: 100%;
   background: var(--gray-700);
   border-radius: 0.5625rem;
+
+  padding: 16px 16px 25px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .comment header {
@@ -42,6 +48,14 @@
   font-size: 14px;
   line-height: 160%;
   color: #e1e1e6;
+}
+
+.trashButton {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 .commentWrapper footer {
